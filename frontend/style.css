@@ -1,0 +1,342 @@
+@font-face {
+    font-family: Kittens;
+    src: url(fonts/A_Kittens_Silhouette_Alen_Rus.otf);
+}
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: MontserratAlternates-SemiBold;
+    src: url(fonts/MontserratAlternates-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.side {
+    padding-left: 210px;
+    padding-right: 210px;
+}
+
+/* ПЕРВЫЙ ЭКРАН */
+
+.cont_offer {
+    background: url(img/bg1.png) no-repeat center center;    
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    object-fit: cover;
+    background-attachment: fixed;
+
+}
+.nav {
+    background-color: rgb(255, 255, 255, 0.5);  
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    height: 112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    justify-content: space-around;
+    font-family: MontserratAlternates-SemiBold;
+    align-items: center;
+    font-size: 40px;
+
+}
+.text-logo {
+    color: black;
+    text-decoration: none;
+}
+.menu, .social {
+    display: flex;
+    justify-content: space-around;
+}
+.menu-text {
+    padding: 30px;
+    align-items: center;
+    font-family: Montserrat-Medium;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+.social-img {
+    height: 45px;
+    width: 45px;
+    align-items: center;
+}
+.text-offer1 {
+    font-family: Kittens;
+    font-size: 128px;
+    margin-top: 90px;
+    color: white;
+}
+.text-offer2 {
+    font-family: Montserrat-Medium;
+    font-size: 36px;
+    margin-top: 17px;
+    color: white;
+}
+.btn-offer {
+    width: 450px;
+    height: 100px;
+    margin-top: 100px;
+    margin-bottom: 90px;
+    font-family: MontserratAlternates-SemiBold;
+    font-size: 48px;
+    background-color: white;
+    border-radius: 55px;
+    border: none;
+}
+.btn-offer:hover {
+    background-color: #ccd8fd;
+}
+
+/* ВТОРОЙ ЭКРАН */
+
+.cont_infa {
+    background: url(img/bg2.png) no-repeat center center;    
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+.text {
+    text-align: right;
+}
+.text1 {
+    font-family: Montserrat-SemiBold;
+    font-size: 64px;
+    padding-top: 160px;
+}
+.text2 {
+    font-family: Montserrat-Regular;
+    font-size: 28px;
+    padding-top: 35px;
+    padding-bottom: 160px;
+}
+
+/* ТРЕТИЙ ЭКРАН */
+
+.cont_mite {
+    background: url(img/bg3.png) no-repeat center center;    
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    color: white;
+}
+.text_summer {
+    font-family: Montserrat-SemiBold;
+    font-size: 64px;
+    padding-top: 75px;
+}
+.usl_text_summer {
+    display: flex;
+    justify-content: space-between;
+}
+.sale_text {
+    font-family: Montserrat-Medium;
+    font-size: 28px;
+    padding-top: 75px;
+}
+.number {
+    font-family: Kittens;
+    font-size: 250px;
+}
+.action {
+    font-family: Montserrat-Medium;
+    font-size: 24px;
+}
+.btn-offer2 {
+    width: 600px;
+    height: 90px;
+    margin-top: 100px;
+    margin-bottom: 90px;
+    font-family: MontserratAlternates-SemiBold;
+    font-size: 40px;
+    background-color: white;
+    border-radius: 55px;
+    border: none;
+}
+.btn-offer2:hover {
+    background-color: #ccd8fd;
+}
+
+/* ЧЕТВЁРТЫЙ ЭКРАН */
+
+.zag_usl {
+    font-family: Montserrat-SemiBold;
+    font-size: 48px;
+    padding-top: 75px;
+    text-align: center;
+}
+.text_usl {
+    font-family: Montserrat-Medium;
+    font-size: 24px;
+    margin-top: 52px;
+    margin-bottom: 10px;
+}
+.uslugi {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.u {
+    padding-top: 30px;
+}
+.cat {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* ПЯТНЫЙ ЭКРАН */
+
+.cont_advantage {
+    background: url(img/bg4.png) no-repeat center center;    
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+.zag_adv {
+    font-family: Montserrat-SemiBold;
+    font-size: 48px;
+    padding-top: 75px;
+    text-align: center;
+    margin-bottom: 80px;
+    color: white;
+}
+.advantage {
+    text-align: left;
+    display: flex;
+    color: white;
+}
+.adv {
+    margin-bottom: 40px;
+    width: 400px;
+    height: 235px;
+}
+.nazv_adv{
+    display: flex;
+
+    align-items: center;
+}
+.img_adv {
+    width: 55px;
+    height: 55px;
+}
+.nazv_adv_text {
+    font-family: Montserrat-Medium;
+    font-size: 32px;
+    padding-left: 15px;
+}
+.text_adv {
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+    padding-left: 70px;
+    padding-top: 10px;
+}
+
+/* МОДАЛЬНОЕ ОКНО */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* серый фон за модальным окном */
+}
+
+.modal-content {
+    background: url('img/bg-modal.png') no-repeat center center;
+    background-size: cover; /* фоновое изображение для первого модального окна */
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 850px;
+    position: relative;
+    display: grid;
+    /* padding-left: 300px;
+    padding-right: 300px; */
+    text-align: center;
+}
+.img-logo {
+    text-align: center;
+}
+.record {
+    text-align: center;
+    font-family: Kittens;
+    font-size: 40px;
+}
+.inp {
+    width: 420px;
+    height: 60px;
+    border: 4px solid #2C3550;
+    border-radius: 30px;
+    text-align: left;
+}
+.name-inp {
+    font-family: Montserrat-Medium;
+    font-size: 16px;
+    padding-left: 10px;
+    text-align: left;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#success-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* серый фон за модальным окном */
+}
+
+#success-modal .modal-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 10% auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    position: relative;
+}

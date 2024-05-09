@@ -267,17 +267,17 @@
     width: 100%;
     height: 100%;
     overflow: auto;
+    text-align: center;
     background-color: rgba(0, 0, 0, 0.5); /* серый фон за модальным окном */
 }
 
 .modal-content {
     background: url('img/bg-modal.png') no-repeat center center;
     background-size: cover; /* фоновое изображение для первого модального окна */
-    margin: 10% auto;
+    margin: 30px auto;
     padding: 20px;
     width: 80%;
     max-width: 850px;
-    position: relative;
     display: grid;
     /* padding-left: 300px;
     padding-right: 300px; */
@@ -291,18 +291,40 @@
     font-family: Kittens;
     font-size: 40px;
 }
-.inp {
+.inp-block {
     width: 420px;
+    height: 60px;
+    margin: 15px auto;
+}
+.inp {
+    width: 405px;
     height: 60px;
     border: 4px solid #2C3550;
     border-radius: 30px;
     text-align: left;
+    padding-left: 10px;
+    color: black;
+    font-size: 15px;
+    font-family: Montserrat-Medium;
+}
+.btn-modal {
+    width: 420px;
+    height: 60px;
+    background-color: #2C3550;
+    color: white;
+    border-radius: 30px;
+    text-align: center;    
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 10px;
+
 }
 .name-inp {
     font-family: Montserrat-Medium;
     font-size: 16px;
     padding-left: 10px;
     text-align: left;
+
 }
 .close {
     color: #aaa;

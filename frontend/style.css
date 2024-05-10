@@ -50,6 +50,10 @@
     justify-content: space-between;
     align-items: center;
 }
+.service-nav {
+    background-color: #BDCFFF;
+    filter: drop-shadow(0px 4px 4px #00000025);
+}
 .logo {
     display: flex;
     justify-content: space-around;
@@ -386,4 +390,65 @@
     font-family: Montserrat-SemiBold;
     font-size: 20px;
   }
-  
+
+
+  /* ДЛЯ СТРАНИЦЫ УСЛУГ */
+
+.zag-srv {
+    font-family: Kittens;
+    font-size: 90px;
+    text-align: center;
+    color: #5F5F5F;
+    margin: 35px auto;
+}
+.infa-srv {
+    display: flex;
+    justify-content: space-between;
+}
+.about {
+    font-size: 32px;
+    font-family: Montserrat-Medium;
+}
+.cost {
+    font-size: 34px;
+    font-family: Montserrat-SemiBold;
+    margin-top: 40px;
+}
+.btn-srv {
+    width: 430px;
+    height: 80px;
+    margin-top: 50px;
+    font-family: MontserratAlternates-SemiBold;
+    font-size: 36px;
+    background-color: #ccd8fd;
+    border-radius: 55px;
+    border: none;
+    filter: drop-shadow(0px 4px 4px #00000025);
+}
+.btn-srv:hover {
+    background-color: #89a6fd;
+}
+.cont-vrach {
+    margin-top: 49px;
+}
+.zag-vrach {
+    font-size: 32px;
+    font-family: Montserrat-Medium;
+}
+.cards-vrach {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    font-family: Montserrat-Medium;
+}
+.card-vrach {
+    align-items: flex-end;
+    text-align: center;
+}
+.card-vrach1 {
+    background: url(img/vrach1.png) no-repeat center center;
+    background-size: cover; 
+    width: 305px;
+    height: 411px;
+    margin-bottom: 30px;
+}

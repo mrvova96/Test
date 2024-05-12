@@ -379,36 +379,45 @@
 
 #bookingButton {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: 170px;
-    height: 50px;
-    border-radius: 30px;
-    border: 2px solid white;
+    bottom: 0px;
+    right: 5px;
+    width: 200px;
+    height: 45px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    /* border: 2px solid white; */
+    border: none;
     display: none;
     background-color: #ccd8fd;
     font-family: Montserrat-SemiBold;
     font-size: 20px;
+    align-items: center;
   }
 
 
-  /* ДЛЯ СТРАНИЦЫ УСЛУГ */
+  /* ДЛЯ СТРАНИЦЫ УСЛУГ И ВРАЧЕЙ*/
 
 .zag-srv {
     font-family: Kittens;
     font-size: 90px;
     text-align: center;
     color: #5F5F5F;
-    margin: 35px auto;
+    margin: 70px auto;
 }
 .infa-srv {
     display: flex;
     justify-content: space-between;
 }
+.infa-doc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .about {
     font-size: 32px;
     font-family: Montserrat-Medium;
 }
+
 .cost {
     font-size: 34px;
     font-family: Montserrat-SemiBold;
@@ -451,4 +460,23 @@
     width: 305px;
     height: 411px;
     margin-bottom: 30px;
+}
+.cards-docs {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.fio {
+    font-family: Montserrat-Medium;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.doljn {
+    color: #494949;
+    font-family: Montserrat-Medium;
+    font-size: 22px;
+}
+.card-doc {
+    width: 360px;
 }

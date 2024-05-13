@@ -105,9 +105,11 @@
     background-color: white;
     border-radius: 55px;
     border: none;
+    transition: all 0.5s;
 }
 .btn-offer:hover {
-    background-color: #ccd8fd;
+    box-shadow: inset 0 0 0 2em #ccd8fd;
+    border-color: white
 }
 
 /* ВТОРОЙ ЭКРАН */
@@ -178,9 +180,12 @@
     background-color: white;
     border-radius: 55px;
     border: none;
+    transition: all 0.5s;
 }
+
 .btn-offer2:hover {
-    background-color: #ccd8fd;
+    box-shadow: inset 0 0 0 2em #ccd8fd;
+    border-color: white
 }
 
 /* ЧЕТВЁРТЫЙ ЭКРАН */
@@ -377,11 +382,12 @@
 
 /* ФИКСИРОВАННАЯ КНОПКА НА СТРАНИЦЕ */
 
-#bookingButton {
+
+.hidden {
     position: fixed;
     bottom: 0px;
     right: 5px;
-    width: 200px;
+    width: 300px;
     height: 45px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -392,7 +398,13 @@
     font-family: Montserrat-SemiBold;
     font-size: 20px;
     align-items: center;
+    transition: all 0.5s;
   }
+.hidden:hover {
+    box-shadow: inset 0 0 0 2em #8fabff;
+    color: #fff;
+    border-color: white
+}
 
 
   /* ДЛЯ СТРАНИЦЫ УСЛУГ И ВРАЧЕЙ*/
@@ -479,4 +491,54 @@
 }
 .card-doc {
     width: 360px;
+}
+
+
+
+
+
+.card-doc {
+    position: relative;
+}
+
+.photo-doc, .photo-c {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.photo-doc {
+    position: relative;
+}
+
+.photo-c {
+    position: absolute;
+    transition: opacity 0.5s;
+    opacity: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 2;
+    margin: 0 auto;
+    font-family: Montserrat-Medium;
+    font-size: 22px;
+
+}
+
+.card-doc:hover .photo-c {
+    opacity: 1;
+}
+
+.card-doc:hover .quote, .card-doc:hover .service {
+    opacity: 1;
 }

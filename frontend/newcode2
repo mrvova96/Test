@@ -48,12 +48,12 @@ const arrows = document.querySelectorAll('.arrow');
 
 arrows.forEach(arrow => {
     arrow.addEventListener('click', () => {
-        if (contMite.style.opacity !== '0') {
-            contMite.style.opacity = 0; // Скрываем блок cont_mite и показываем cont_mite2
-            contMite2.style.opacity = 1;
+        if (contMite.style.display !== 'none') {
+            contMite.style.display = 'none'; // Скрываем блок cont_mite и показываем cont_mite2
+            contMite2.style.display = 'block';
         } else {
-            contMite.style.opacity = 1; // Скрываем блок cont_mite2 и показываем cont_mite
-            contMite2.style.opacity = 0;
+            contMite.style.display = 'block'; // Скрываем блок cont_mite2 и показываем cont_mite
+            contMite2.style.display = 'none';
         }
     });
 });

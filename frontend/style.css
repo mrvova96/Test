@@ -170,7 +170,7 @@
     font-family: Montserrat-Medium;
     font-size: 24px;
 }
-.btn-offer2 {
+.btn-offer2, .btn-offer3 {
     width: 600px;
     height: 90px;
     margin-top: 100px;
@@ -183,7 +183,7 @@
     transition: all 0.5s;
 }
 
-.btn-offer2:hover {
+.btn-offer2:hover, .btn-offer3:hover {
     box-shadow: inset 0 0 0 2em #ccd8fd;
     border-color: white
 }
@@ -263,6 +263,76 @@
     font-size: 20px;
     padding-left: 70px;
     padding-top: 10px;
+}
+
+/* ШЕСТОЙ ЭКРАН */
+
+.cont_news {
+    background: url(img/bg-news.png) no-repeat center center;    
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.zag_news {
+    font-family: Montserrat-SemiBold;
+    font-size: 48px;
+    padding-top: 75px;
+    text-align: center;
+    padding-bottom: 70px;
+}
+.date-news {
+    color: #5F5F5F;
+    font-family: Montserrat-Medium;
+    font-size: 20px;
+}
+.news-nazv {
+    font-family: Montserrat-Medium;
+    font-size: 32px;
+    padding-bottom: 22px;
+}
+.news-text {
+    font-family: Montserrat-Medium;
+    font-size: 22px;
+    padding-bottom: 60px;
+}
+hr {
+
+    background-color: #494949;
+    margin-bottom: 60px;
+}
+/* СЕДЬМОЙ ЭКРАН */
+
+.cont_prep {
+    background: url(img/prep.png) no-repeat center center;    
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.zag_prep {
+    font-family: Montserrat-SemiBold;
+    font-size: 48px;
+    padding-top: 120px;
+    margin-bottom: 100px;
+    color: white;
+}
+.punkt{
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    color: white;
+}
+.num {
+    font-family: Kittens;
+    font-size: 96px;
+    width: 58px;
+}
+.punkt-text {
+    font-family: Montserrat-Medium;
+    font-size: 32px;
+    padding-top: 25px;
+    width: 556px;
 }
 
 /* МОДАЛЬНОЕ ОКНО */

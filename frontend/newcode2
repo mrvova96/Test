@@ -1,0 +1,60 @@
+; Изменения в шапке, теперь таждый пункт ещё в div
+
+<div class="menu">
+    <a href="#uslugi" class="menu-text"><div class="menu-text-1">Услуги</div></a>
+    <a href="#sale" class="menu-text"><div class="menu-text-1">Акции</div></a>
+    <a href="#footer" class="menu-text"><div class="menu-text-1">Контакты</div></a>
+    <a href="doctors.html" class="menu-text"><div class="menu-text-1">Специалисты</div></a>
+</div>
+
+; Акции
+
+<div class="cont_mite" id="sale">
+    <div class="mite">
+        <div class="text_summer">Безопасное лето для <br> вашего питомца</div>
+        <div class="usl_text_summer">
+            <div class="arrow left"><img src="img/left.png" alt=""></div>
+            <div class="sale_text">В предверии активного <b><u>сезона клещей</u></b> <br> мы заботимся о здоровье и <br> безопасности ваших питомцев.<br> Приходите к нам для вакцинации <br> против клещевого энцефалита и других <br> болезней и получите <b><u>специальную <br> скидку!</u></b></div>
+            <div class="sale">
+                <div class="number">20%</div>
+                <div class="action">*Акция действет с 1 апреля по 1 мая</div>
+            </div>
+            <div class="arrow right"><img src="img/right.png" alt=""></div>       
+        </div>
+        <button class="btn-offer2">Записаться на приём</button> 
+    </div>
+</div>
+<div class="cont_mite2">
+    <div class="mite">
+        <div class="text_summer">Запишись онлайн и <br> экономь</div>
+        <div class="usl_text_summer">
+            <div class="arrow left"><img src="img/left.png" alt=""></div>
+            <div class="sale_text">Специальное предложение для <br> любящих хозяев! <b><u>Запишитесь</u></b> на приём <br> через <b><u>наш сайт</u></b> и получите скидку на <br> любые услуги для вашего питомца. Мы <br> ценим ваше доверие и заботу о <br> здоровье своего питомца. Забронируйте <br> приём сейчас и экономьте с нами!</div>
+            <div class="sale">
+                <div class="number">15%</div>
+            </div>
+            <div class="arrow right"><img src="img/right.png" alt=""></div>
+        </div>
+        <button class="btn-offer4">Записаться на приём</button>        
+    </div>
+</div>
+
+; Скрипт для акций
+
+<script>
+const contMite = document.querySelector('.cont_mite');
+const contMite2 = document.querySelector('.cont_mite2');
+const arrows = document.querySelectorAll('.arrow');
+
+arrows.forEach(arrow => {
+    arrow.addEventListener('click', () => {
+        if (contMite.style.opacity !== '0') {
+            contMite.style.opacity = 0; // Скрываем блок cont_mite и показываем cont_mite2
+            contMite2.style.opacity = 1;
+        } else {
+            contMite.style.opacity = 1; // Скрываем блок cont_mite2 и показываем cont_mite
+            contMite2.style.opacity = 0;
+        }
+    });
+});
+</script>

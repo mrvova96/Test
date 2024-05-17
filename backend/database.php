@@ -3,7 +3,7 @@
 /**
  * Параметры подключения к базе данных
  */
-const SERVER = "77.220.52.249";
+const SERVER = "localhost";
 const USERNAME = "root";
 const PASSWORD = "";
 const DATABASE = "vet_database";

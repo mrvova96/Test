@@ -1,12 +1,12 @@
 <footer>
-    <div class="footer side">
+    <div class="footer side" id="contacts">
         <div class="infa-foot">
             <div class="menu-foot">
-                <a href="#uslugi" class="menu-foot-1">Услуги</a>
-                <a href="#sale" class="menu-foot-1">Акции</a>
-                <a href="doctors.html" class="menu-foot-1">Специалисты</a>
-                <a href="#" class="menu-foot-1">Новости</a>
-                <a href="#advantage" class="menu-foot-1">Преимущества</a>
+                <a href="index.php#sales" class="menu-foot-1">Акции</a>
+                <a href="index.php#services" class="menu-foot-1">Услуги</a>
+                <a href="doctor.php" class="menu-foot-1">Специалисты</a>
+                <a href="index.php#news" class="menu-foot-1">Новости</a>
+                <a href="index.php#advantages" class="menu-foot-1">Преимущества</a>
             </div>
             <div class="contact1">
                 <img src="img/vk.png" alt="">
@@ -25,40 +25,9 @@
             <div class="copyright">© 2022 - 2024 «ВетКОТ»</div>
         </div>
         <div class="logo-in-foot">
-            <a href="index.html"><img class="img-logo" src="img/logo.png" alt=""></a>
-            <a href="index.html" class="text-logo">ВетКОТ</a>
+            <a href="index.php"><img class="img-logo" src="img/logo.png" alt=""></a>
+            <a href="index.php" class="text-logo">ВетКОТ</a>
         </div>
     </div>
 </footer>
 
-
-<!-- эту кнопку короче добавишь сразу после боди, после той кнопки -->
-<div class="btn-up btn-up_hide"></div>
-
-<!-- ну и скрипт в конце вставишь для этой кнопки -->
-<script>
-    const btnUp = {
-      el: document.querySelector('.btn-up'),
-      show() {
-        this.el.classList.remove('btn-up_hide');
-      },
-      hide() {
-        this.el.classList.add('btn-up_hide');
-      },
-      addEventListener() {
-        window.addEventListener('scroll', () => {
-          const scrollY = window.scrollY || document.documentElement.scrollTop;
-          scrollY > 250 ? this.show() : this.hide();
-        });
-        this.el.onclick = () => {
-          window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'smooth'
-          });
-        }
-      }
-    }
-    
-    btnUp.addEventListener();
-    </script>
